@@ -1,11 +1,16 @@
-import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import { Button } from 'react-bootstrap';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <button className='btn btn-primary'>Click</button>
-      </header>
+
+      <section className='py-5'>
+        <div className="container">
+          <h1>Need a Wireframe</h1>
+        </div>
+      </section>
+
     </div>
   );
 }
