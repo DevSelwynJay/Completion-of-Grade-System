@@ -1,5 +1,11 @@
-//SET VARIABLES
-$primary: #1D876D;
+//Dependencies
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
 
-//IMPORT
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+//Include any optional Bootstrap CSS as needed
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+
+//Add additional custom code here
+
