@@ -11,8 +11,8 @@ function Registration(){
                 <div className='col-sm-4 bg-primary p-5'>
                     <h1 className='text-white fw-bold text-center'>Welcome Back!</h1>
                 </div>
-                <div className='col-sm-8 form'>
-                    <div className='form-container'>
+                <div className='col-sm-8 form-container'>
+                    <form>
                     <h1 className='text-center pb-3 fw-bold'>Registration</h1>
                         <div className='row mb-3'>
                            <div className='col-sm-6'>
@@ -51,7 +51,7 @@ function Registration(){
                                <button className='btn btn-primary btn-lg'>Sign up</button>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
            </div>

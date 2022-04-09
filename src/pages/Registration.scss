@@ -1,11 +1,11 @@
 .registration{
 
-    .form{
+    .form-container{
        height: 100vh;
        display: grid;
        place-items: center;
 
-       &-container{
+       form{
            width: 70%;
        }
     }
