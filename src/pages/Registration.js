@@ -13,21 +13,21 @@ function Registration(){
                 </div>
                 <div className='col-sm-8 form-container p-4'>
                     <form>
-                    <h1 className='text-center pb-3 fw-bold'>Registration</h1>
+                    <h1 className='text-center mb-3 fw-bold'>Registration</h1>
                         <div className='row'>
                            <div className='col-sm-6 mb-3'>
-                              <input type="text" class="form-control form-control-lg" placeholder="First name"/>
+                              <input type="text" class="form-control " placeholder="First name"/>
                            </div>
                            <div className='col-sm-6 mb-3'>
-                              <input type="text" class="form-control form-control-lg" placeholder="Last name"/> 
+                              <input type="text" class="form-control " placeholder="Last name"/> 
                            </div>
                         </div>
                         <div className='row'>
                            <div className='col-sm-6 mb-3'>
-                              <input type="text" class="form-control form-control-lg" placeholder="Contact No."/>
+                              <input type="text" class="form-control " placeholder="Contact No."/>
                            </div>
                            <div className='col-sm-6 mb-3'>
-                            <select class="form-select form-select-lg" aria-label="Default select example">
+                            <select class="form-select" aria-label="Default select example">
                             <option selected>Faculty</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
@@ -37,18 +37,18 @@ function Registration(){
                         </div>
                         <div className='row mb-3'>
                            <div className='col-sm-12 mb-3'>
-                              <input type="text" class="form-control form-control-lg" placeholder="Email"/>
+                              <input type="text" class="form-control " placeholder="Email"/>
                            </div>
                            <div className='col-sm-12 mb-3'>
-                              <input type="text" class="form-control form-control-lg" placeholder="Password"/> 
+                              <input type="text" class="form-control " placeholder="Password"/> 
                            </div>
                            <div className='col-sm-12 mb-3'>
-                              <input type="text" class="form-control form-control-lg" placeholder="Confirm Password"/> 
+                              <input type="text" class="form-control " placeholder="Confirm Password"/> 
                            </div>
                         </div>
                         <div className='row'>
                             <div className='col-sm-12 d-flex justify-content-center'>
-                               <button className='btn btn-primary btn-lg'>Sign up</button>
+                               <button className='btn btn-primary'>Sign up</button>
                             </div>
                         </div>
                     </form>

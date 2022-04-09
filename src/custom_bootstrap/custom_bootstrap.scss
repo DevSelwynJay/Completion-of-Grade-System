@@ -1,8 +1,5 @@
 //VARIABLES
-$theme-colors:(
-    "primary": #19745d,
-);
-
+$primary: #19745d;
 $headings-color: #19745d;
 
 //IMPORT BOOTSTRAP
@@ -11,7 +8,7 @@ $headings-color: #19745d;
 //OVERWRITES
 .btn{
     border-radius: 50px;
-    width: 9rem;
+    width: 8rem;
     line-height: 1;
     padding: .6rem;
 }
