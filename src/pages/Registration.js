@@ -8,25 +8,25 @@ function Registration(){
        <section className='registration'>
            <div className='container-fluid'>
             <div className='row'>
-                <div className='col-sm-4 bg-primary p-5'>
+                <div className='col-sm-4 text-container bg-primary p-5'>
                     <h1 className='text-white fw-bold text-center'>Welcome Back!</h1>
                 </div>
-                <div className='col-sm-8 form-container'>
+                <div className='col-sm-8 form-container p-4'>
                     <form>
                     <h1 className='text-center pb-3 fw-bold'>Registration</h1>
-                        <div className='row mb-3'>
-                           <div className='col-sm-6'>
+                        <div className='row'>
+                           <div className='col-sm-6 mb-3'>
                               <input type="text" class="form-control form-control-lg" placeholder="First name"/>
                            </div>
-                           <div className='col-sm-6'>
+                           <div className='col-sm-6 mb-3'>
                               <input type="text" class="form-control form-control-lg" placeholder="Last name"/> 
                            </div>
                         </div>
-                        <div className='row mb-3'>
-                           <div className='col-sm-6'>
+                        <div className='row'>
+                           <div className='col-sm-6 mb-3'>
                               <input type="text" class="form-control form-control-lg" placeholder="Contact No."/>
                            </div>
-                           <div className='col-sm-6'>
+                           <div className='col-sm-6 mb-3'>
                             <select class="form-select form-select-lg" aria-label="Default select example">
                             <option selected>Faculty</option>
                             <option value="1">One</option>
