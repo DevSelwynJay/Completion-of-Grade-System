@@ -1,13 +1,12 @@
 import './custom_bootstrap/custom_bootstrap.scss';
-import Registration from './pages/Registration';
+import Views from './Views';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-       
-       <Registration/>
-
-    </div>
+    <BrowserRouter>
+       <Views/>
+    </BrowserRouter>
   );
 }
 
