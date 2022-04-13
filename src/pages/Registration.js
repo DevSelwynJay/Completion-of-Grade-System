@@ -1,5 +1,8 @@
 import '../pages/Registration.scss';
+import Logo from '../images/bulsu-logo.png';
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
+
 
 
 function Registration(){
@@ -19,10 +22,23 @@ function Registration(){
        <section className='registration'>
            <div className='container-fluid'>
             <div className='row'>
-                <div className='col-sm-4 text-container bg-primary p-5'>
-                    <h1 className='text-white fw-bold text-center'>Welcome Back!</h1>
+                <div className='col-xl-4 text-container bg-primary'>
+                    <div className='d-flex align-items-center justify-content-center gap-2 logo-container'>
+                     <div>
+                        <img className='bd-placeholder-img rounded-circle' width="75" height="75" src={Logo} alt='logo' />
+                     </div>
+                     <div>
+                        <h4 className='text-white text-uppercase fw-bold m-0'>Bulacan State University</h4>
+                        <h5 className='text-white text-uppercase'>Completion of Grade System</h5>
+                     </div>
+                    </div>
+                    <div className='text-center'>
+                     <h1 className='text-white fw-bold'>Welcome Back!</h1>
+                     <p className='text-white fs-5'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+                     <Link className='btn btn-outline-light' to="/login">Sign in</Link>
+                    </div>
                 </div>
-                <div className='col-sm-8 form-container p-4'>
+                <div className='col-xl-8 form-container p-4'>
                     <form>
                     <h1 className='text-center mb-3 fw-bold'>Registration</h1>
                         <div className='row'>

@@ -1,13 +1,32 @@
 .registration{
 
     .text-container{
-        height: 100vh;
+        min-height: 100vh;
+        background-image: url(../images/welcome-bg.jpg);
+        padding: 2.5rem;
+
+        .logo-container{
+          margin-bottom: 20vh;
+
+          @media (max-width: 1199.98px) {
+            margin-bottom: 5vh;
+          }
+        }
+
+        @media (max-width: 1199.98px) {
+            min-height: 10rem;
+            padding: 1.5rem;
+        }
     }
 
     .form-container{
        height: 100vh;
        display: grid;
        place-items: center;
+
+       @media (max-width: 1199.98px) {
+        height: 100%;
+       }
 
        form{
            max-width: 50rem;
