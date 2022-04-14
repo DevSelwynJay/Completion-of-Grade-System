@@ -1,6 +1,8 @@
 //VARIABLES
 $primary: #19745d;
 $headings-color: #19745d;
+$light-grey: #EFEFF3;
+$grey: #b8b8b8;
 
 //IMPORT BOOTSTRAP
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
@@ -13,3 +15,20 @@ $headings-color: #19745d;
     padding: .6rem;
 }
 
+.btn-outline-light:hover{
+    color: $primary;
+}
+
+.control.has-icon-left{
+   position: relative;
+  .form-control, .form-select{
+   padding-left: 2.25rem;
+  }
+  span.is-left{
+    position: absolute;
+    left: .8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $grey;
+  }
+}
