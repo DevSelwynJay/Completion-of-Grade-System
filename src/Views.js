@@ -5,6 +5,7 @@ import Login from './pages/Login';
 function Views() {
   return (
       <Routes>
+          <Route path="/" element={<Login/>}/>
           <Route path="/registration" element={<Registration/>}/>
           <Route path="/login" element={<Login/>}/>
       </Routes>

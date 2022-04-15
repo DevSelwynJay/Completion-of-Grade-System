@@ -1,4 +1,4 @@
-import './custom_bootstrap/custom_bootstrap.scss';
+import './styles/main.scss';
 import Views from './Views';
 import { BrowserRouter } from 'react-router-dom';
 

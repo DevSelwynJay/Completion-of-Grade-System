@@ -1,4 +1,3 @@
-import '../pages/Registration.scss';
 import Logo from '../images/bulsu-logo.png';
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
@@ -6,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faUsers } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLock } from '@fortawesome/free-solid-svg-icons';
 
 
 function Registration(){
@@ -22,7 +23,7 @@ function Registration(){
 
     return(
       <>
-       <section className='registration'>
+       <section>
            <div className='container-fluid'>
             <div className='row'>
                 <div className='col-xl-4 text-container bg-primary'>
@@ -36,12 +37,12 @@ function Registration(){
                      </div>
                     </div>
                     <div className='text-center'>
-                     <h1 className='text-white fw-bold'>Welcome Back!</h1>
+                     <h1 className='text-white fw-bold'>Hello! Welcome!</h1>
                      <p className='text-white fs-5'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
                      <Link className='btn btn-outline-light' to="/login">Sign in</Link>
                     </div>
                 </div>
-                <div className='col-xl-8 form-container p-4'>
+                <div className='col-xl-8 form-container'>
                     <form>
                     <h1 className='text-center mb-3 fw-bold'>Registration</h1>
                         <div className='row'>
@@ -95,13 +96,28 @@ function Registration(){
                         )}
                         <div className='row mb-3'>
                            <div className='col-sm-12 mb-3'>
-                              <input type="text" className="form-control " placeholder="Email"/>
+                             <div className='control has-icon-left'>
+                               <span className='is-left'>
+                                 <FontAwesomeIcon icon={faEnvelope} />
+                               </span>
+                               <input type="text" className="form-control " placeholder="Email"/>
+                             </div>
                            </div>
                            <div className='col-sm-12 mb-3'>
-                              <input type="text" className="form-control " placeholder="Password"/> 
+                             <div className='control has-icon-left'>
+                               <span className='is-left'>
+                                 <FontAwesomeIcon icon={faEnvelope} />
+                               </span>
+                               <input type="text" className="form-control " placeholder="Password"/> 
+                             </div>
                            </div>
                            <div className='col-sm-12 mb-3'>
+                             <div className='control has-icon-left'>
+                               <span className='is-left'>
+                                 <FontAwesomeIcon icon={faLock} />
+                               </span>
                               <input type="text" className="form-control " placeholder="Confirm Password"/> 
+                             </div>
                            </div>
                         </div>
                         <div className='row'>
