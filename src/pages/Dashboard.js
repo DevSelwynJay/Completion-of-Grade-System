@@ -8,6 +8,7 @@ function Dashboard(){
    
     return(
       <>
+      
         <header className='bg-primary p-md-3'>
         <div className='container'>
             <div className='row align-items-center'>
@@ -48,7 +49,7 @@ function Dashboard(){
         <div className='container'>
             <div className='row'>
                 <div className='col-sm-6'>
-                    <h3 className='fw-medium'>Completion Forms</h3>
+                    <h3 className='fw-medium m-0'>Completion Forms</h3>
                 </div>
                 <div className='col-sm-6'>
                     <div className='row align-items-center h-100'>
@@ -85,9 +86,9 @@ function Dashboard(){
 
         <div className='p-md-4'>
         <div className='container'>
-            <div className='row'>
+            <div className='row mb-2'>
                 <div className='col-sm-6'>
-                    <h3 className='fw-medium text-black'>Summary</h3>
+                    <h3 className='fw-medium text-black m-0'>Summary</h3>
                 </div>
                 <div className='col-sm-6'>
                     <div className='row'>
@@ -150,12 +151,27 @@ function Dashboard(){
                             <td>@mdo</td>
                             <td><button className='btn btn-primary'>View File</button> <button className='btn btn-primary'>Update</button></td>
                         </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td><button className='btn btn-primary'>View File</button> <button className='btn btn-primary'>Update</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td><button className='btn btn-primary'>View File</button> <button className='btn btn-primary'>Update</button></td>
+                        </tr>
                     </tbody>
                     </table>
                 </div>
             </div>
         </div>
         </div>
+
       </>
     );
 }
