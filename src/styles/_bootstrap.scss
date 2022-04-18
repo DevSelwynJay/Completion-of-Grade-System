@@ -1,6 +1,6 @@
 //VARIABLES
 $primary: #19745d;
-$headings-color: #19745d;
+$headings-color: $primary;
 $light-grey: #EFEFF3;
 $grey: #b8b8b8;
 
@@ -17,6 +17,10 @@ $grey: #b8b8b8;
 
 .btn-outline-light:hover{
     color: $primary;
+}
+
+.text-right{
+  text-align: right !important;
 }
 
 .control.has-icon-left{
