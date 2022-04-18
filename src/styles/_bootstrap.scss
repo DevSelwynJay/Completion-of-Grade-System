@@ -1,8 +1,12 @@
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap');
+
 //VARIABLES
 $primary: #19745d;
 $headings-color: $primary;
 $light-grey: #EFEFF3;
 $grey: #b8b8b8;
+$font-family-base: 'Open Sans', sans-serif;
 
 //IMPORT BOOTSTRAP
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";

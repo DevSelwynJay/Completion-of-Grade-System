@@ -34,6 +34,21 @@
    }
 }
 
-.table-container{
-  height: 400px;
+/*****HEADER*****/
+.top-nav li a{
+ font-size: 18px !important;
+}
+
+
+/*****TABLES*****/
+.table{
+  table-layout: fixed;
+
+  thead{
+    tr{
+      .id{
+        width: 10%;
+      }
+    }
+  }
 }
