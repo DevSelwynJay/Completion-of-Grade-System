@@ -30,13 +30,17 @@
    }
   
    form{
-       max-width: 50rem;
+       max-width: 45rem;
    }
 }
 
 /*****HEADER*****/
 .top-nav li a{
- font-size: 18px !important;
+  border-radius: 0.25rem;
+ &:hover{
+   background-color: #fff;
+   color: $primary !important;
+ }
 }
 
 
@@ -51,4 +55,24 @@
       }
     }
   }
+
+  th,td{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  th{
+    font-size: 18px;
+  }
+
+  td{
+    padding: .7rem 1rem !important;
+  }
+
+  td{
+    button{
+      width: 100% !important;
+    }
+  }
+
 }

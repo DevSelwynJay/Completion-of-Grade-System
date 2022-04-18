@@ -7,236 +7,250 @@ function Dashboard(){
     return(
       <>
       
-       <Header/>
+      <Header/>
 
-        <div className='p-md-5'>
+      <div className='p-md-5'>
         <div className='container'>
-            <div className='row mb-5'>
-            <div className='col-sm-6'>
-                <h3 className='fw-medium m-0'>Completion Forms</h3>
-            </div>
-            <div className='col-sm-6'>
-                <div className='row align-items-center h-100'>
-                <div className='col-lg-6 col-xl-5'>
-                    <div className='d-flex align-items-center gap-2'>
-                        <div>
-                            Rows per Page
-                        </div>
-                        <div className='col'>
-                            <select class="form-select">
-                            <option value="1" selected>1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            </select>
-                        </div>
+            <div className='row mb-4'>
+              <div className='col-sm-8'>
+                  <h3 className='fw-bold m-0'>Completion Forms</h3>
+              </div>
+              <div className='col-sm-4'>
+                  <div className='d-flex gap-2'>
+                    <div className='control flex-grow-1 has-icon-left'>
+                        <span className='is-left'>
+                          <FontAwesomeIcon icon={faSearch} />
+                        </span>
+                        <input type="text" className="form-control"/> 
                     </div>
-                </div>
-                <div className='col-lg-6 col-xl-7'>
-                    <div className='d-flex gap-2'>
-                        <div className='control flex-grow-1 has-icon-left'>
-                            <span className='is-left'>
-                            <FontAwesomeIcon icon={faSearch} />
-                            </span>
-                            <input type="text" className="form-control"/> 
-                        </div>
-                        <button className='btn btn-primary'>Search</button>
-                    </div>
-                </div>
-                </div>
-            </div>
+                    <button className='btn btn-primary'>Search</button>
+                  </div>
+              </div>
             </div>
             <div className='row mb-3'>
-            <div className='col-sm-6'>
-                <h3 className='fw-medium text-black m-0'>Summary</h3>
-            </div>
-            <div className='col-sm-6'>
-                <div className='row'>
-                <div className='col-sm-6'>
-                    <div className='d-flex gap-2 align-items-center'>
-                        <div>
-                            Show
-                        </div>
-                        <div className='flex-grow-1'>
-                            <select class="form-select">
-                            <option value="1" selected>1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            </select>
-                        </div>
+              <div className='col-sm-8'>
+                  <h4 className='text-black m-0'>Summary</h4>
+              </div>
+              <div className='col-sm-4'>
+                  <div className='d-flex gap-2 align-items-center'>
+                    <div>
+                        Rows per Page
                     </div>
-                </div>
-                <div className='col-sm-6 d-flex justify-content-end'>
-                    <nav>
-                        <ul class="pagination m-0">
-                            <li className="page-item">
-                            <a className="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                            </a>
-                            </li>
-                            <li className="page-item"><a class="page-link" href="#">1</a></li>
-                            <li className="page-item"><a class="page-link" href="#">2</a></li>
-                            <li className="page-item"><a class="page-link" href="#">3</a></li>
-                            <li className="page-item"><a class="page-link" href="#">4</a></li>
-                            <li className="page-item"><a class="page-link" href="#">5</a></li>
-                            <li className="page-item"><a class="page-link" href="#">6</a></li>
-                            <li className="page-item">
-                            <a className="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                            </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                </div>
-            </div>
+                    <div className='flex-grow-1'>
+                        <select class="form-select">
+                          <option value="10" selected>10</option>
+                          <option value="5">5</option>
+                        </select>
+                    </div>
+                  </div>
+              </div>
             </div>
             <div className='row'>
-            <div className='col-sm-12'>
-                <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col" className='id'>ID</th>
-                        <th scope="col">Document Name</th>
-                        <th scope="col">Faculty ID</th>
-                        <th scope="col">Status</th>
-                        <th scope="col">Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>
-                            <div className='row'>
-                              <div className='col-sm-6'>
-                                <button className='btn btn-primary'>View File</button>
+              <div className='col-sm-12'>
+                  <table class="table table-striped">
+                    <thead>
+                        <tr>
+                          <th scope="col" className='id'>ID</th>
+                          <th scope="col">Document Name</th>
+                          <th scope="col">Faculty ID</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                          <td>
+                              <div className='row'>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>View File</button>
+                                </div>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>Update</button>
+                                </div>
                               </div>
-                              <div className='col-sm-6'>
-                                <button className='btn btn-primary'>Update</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                          <td>
+                              <div className='row'>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>View File</button>
+                                </div>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>Update</button>
+                                </div>
                               </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>
-                            <div className='row'>
-                              <div className='col-sm-6'>
-                                <button className='btn btn-primary'>View File</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                          <td>
+                              <div className='row'>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>View File</button>
+                                </div>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>Update</button>
+                                </div>
                               </div>
-                              <div className='col-sm-6'>
-                                <button className='btn btn-primary'>Update</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                          <td>
+                              <div className='row'>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>View File</button>
+                                </div>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>Update</button>
+                                </div>
                               </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>
-                            <div className='row'>
-                              <div className='col-sm-6'>
-                                <button className='btn btn-primary'>View File</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                          <td>
+                              <div className='row'>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>View File</button>
+                                </div>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>Update</button>
+                                </div>
                               </div>
-                              <div className='col-sm-6'>
-                                <button className='btn btn-primary'>Update</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                          <td>
+                              <div className='row'>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>View File</button>
+                                </div>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>Update</button>
+                                </div>
                               </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>
-                            <div className='row'>
-                              <div className='col-sm-6'>
-                                <button className='btn btn-primary'>View File</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                          <td>
+                              <div className='row'>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>View File</button>
+                                </div>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>Update</button>
+                                </div>
                               </div>
-                              <div className='col-sm-6'>
-                                <button className='btn btn-primary'>Update</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                          <td>
+                              <div className='row'>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>View File</button>
+                                </div>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>Update</button>
+                                </div>
                               </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>
-                            <div className='row'>
-                              <div className='col-sm-6'>
-                                <button className='btn btn-primary'>View File</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                          <td>
+                              <div className='row'>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>View File</button>
+                                </div>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>Update</button>
+                                </div>
                               </div>
-                              <div className='col-sm-6'>
-                                <button className='btn btn-primary'>Update</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                          <td>
+                              <div className='row'>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>View File</button>
+                                </div>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>Update</button>
+                                </div>
                               </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>
-                            <div className='row'>
-                              <div className='col-sm-6'>
-                                <button className='btn btn-primary'>View File</button>
-                              </div>
-                              <div className='col-sm-6'>
-                                <button className='btn btn-primary'>Update</button>
-                              </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>
-                            <div className='row'>
-                              <div className='col-sm-6'>
-                                <button className='btn btn-primary'>View File</button>
-                              </div>
-                              <div className='col-sm-6'>
-                                <button className='btn btn-primary'>Update</button>
-                              </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>
-                            <div className='row'>
-                              <div className='col-sm-6'>
-                                <button className='btn btn-primary'>View File</button>
-                              </div>
-                              <div className='col-sm-6'>
-                                <button className='btn btn-primary'>Update</button>
-                              </div>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-                </table>
+                          </td>
+                        </tr>
+                    </tbody>
+                  </table>
+              </div>
             </div>
+            <div className='row align-items-center mb-3'>
+              <div className='col-sm-6'>
+                  <p className='text-black m-0'>Page 1 fo 6</p>
+              </div>
+              <div className='col-sm-6 d-flex justify-content-end'>
+                  <nav>
+                    <ul class="pagination m-0">
+                        <li className="page-item">
+                          <a className="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li className="page-item"><a class="page-link" href="#">1</a></li>
+                        <li className="page-item"><a class="page-link" href="#">2</a></li>
+                        <li className="page-item"><a class="page-link" href="#">3</a></li>
+                        <li className="page-item"><a class="page-link" href="#">4</a></li>
+                        <li className="page-item"><a class="page-link" href="#">5</a></li>
+                        <li className="page-item"><a class="page-link" href="#">6</a></li>
+                        <li className="page-item">
+                          <a className="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                    </ul>
+                  </nav>
+              </div>
             </div>
         </div>
-        </div>
+      </div>
 
       </>
     );

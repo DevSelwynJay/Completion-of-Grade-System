@@ -4,7 +4,7 @@ import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import { faBell } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
-import { faFolderMinus } from '@fortawesome/free-solid-svg-icons';
+import { faNewspaper } from '@fortawesome/free-solid-svg-icons';
 
 function Header(){
    
@@ -20,17 +20,17 @@ function Header(){
                     </div>
                     <div>
                         <h5 className='text-white text-uppercase fw-bold m-0'>Bulacan State University</h5>
-                        <h6 className='text-white text-uppercase'>Completion of Grade System</h6>
+                        <h6 className='text-white text-uppercase m-0'>Completion of Grade System</h6>
                     </div>
                     </div>
                 </div>
                 <div className='col-sm-8'>
-                    <ul class="nav top-nav justify-content-end mb-2">
+                    <ul class="nav top-nav justify-content-end">
                         <li class="nav-item">
                             <a class="nav-link active text-white text-uppercase fw-bold" aria-current="page" href="#"><FontAwesomeIcon icon={faHome} /> Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white text-uppercase fw-bold" href="#"><FontAwesomeIcon icon={faFolderMinus} /> Form Tracker</a>
+                            <a class="nav-link text-white text-uppercase fw-bold" href="#"><FontAwesomeIcon icon={faNewspaper} /> Form Tracker</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white text-uppercase fw-bold" href="#"> <FontAwesomeIcon icon={faPhone} /> Support</a>
@@ -40,13 +40,13 @@ function Header(){
                     <div className='col-sm-12'>
                         <div className='d-flex align-items-center justify-content-end gap-3'>
                             <div className='pe-3'>
-                                <span className='text-white fs-4'>
+                                <span className='text-white fs-5'>
                                 <FontAwesomeIcon icon={faBell}/>
                                 </span>
                             </div>
                             <div>
-                                <p className='m-0 text-white fs-5 fw-bold'>Juan Dela Cruz</p>
-                                <p className='m-0 text-right text-white'>Account Setting</p>
+                                <p className='m-0 text-white fw-bold lh-1'>Juan Dela Cruz</p>
+                                <p className='m-0 text-right fw-light text-white'><small>Account Setting</small></p>
                             </div>
                             <div>
                                 <span className='text-white fs-1'>
