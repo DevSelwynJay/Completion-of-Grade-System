@@ -119,6 +119,11 @@ function Registration(){
                               <input type="text" className="form-control " placeholder="Confirm Password"/> 
                              </div>
                            </div>
+                           <div className='col-sm-12'>
+                              <div className="mb-3">
+                                 <input className="form-control" type="file" id="formFile" />
+                              </div>
+                           </div>
                         </div>
                         <div className='row'>
                             <div className='col-sm-12 d-flex justify-content-center'>

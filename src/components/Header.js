@@ -11,54 +11,43 @@ function Header(){
     return(
       <>
         <header className='bg-primary p-md-3'>
-        <div className='container'>
-            <div className='row align-items-center'>
-                <div className='col-sm-4'>
-                    <div className='d-flex align-items-center gap-2'>
-                    <div>
-                        <img className='bd-placeholder-img rounded-circle' width="65" height="65" src={Logo} alt='logo' />
-                    </div>
-                    <div>
-                        <h5 className='text-white text-uppercase fw-bold m-0'>Bulacan State University</h5>
-                        <h6 className='text-white text-uppercase m-0'>Completion of Grade System</h6>
-                    </div>
-                    </div>
-                </div>
-                <div className='col-sm-8'>
-                    <ul class="nav top-nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white text-uppercase fw-bold" aria-current="page" href="#"><FontAwesomeIcon icon={faHome} /> Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white text-uppercase fw-bold" href="#"><FontAwesomeIcon icon={faNewspaper} /> Form Tracker</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white text-uppercase fw-bold" href="#"> <FontAwesomeIcon icon={faPhone} /> Support</a>
-                        </li>
-                    </ul>
-                    <div className='row align-items-center'>
-                    <div className='col-sm-12'>
-                        <div className='d-flex align-items-center justify-content-end gap-3'>
-                            <div className='pe-3'>
-                                <span className='text-white fs-5'>
-                                <FontAwesomeIcon icon={faBell}/>
-                                </span>
-                            </div>
-                            <div>
-                                <p className='m-0 text-white fw-bold lh-1'>Juan Dela Cruz</p>
-                                <p className='m-0 text-right fw-light text-white'><small>Account Setting</small></p>
-                            </div>
-                            <div>
-                                <span className='text-white fs-1'>
-                                <FontAwesomeIcon icon={faUserCircle}/>
-                                </span>
-                            </div>
+            <div className='container'>
+                <div className='row align-items-center'>
+                    <div className='col-sm-4'>
+                        <div className='d-flex align-items-center gap-2'>
+                        <div>
+                            <img className='bd-placeholder-img rounded-circle' width="65" height="65" src={Logo} alt='logo' />
+                        </div>
+                        <div>
+                            <h5 className='text-white text-uppercase fw-bold m-0'>Bulacan State University</h5>
+                            <h6 className='text-white text-uppercase m-0'>Completion of Grade System</h6>
+                        </div>
                         </div>
                     </div>
+                    <div className='col-sm-8'>
+                        <div className='row align-items-center'>
+                        <div className='col-sm-12'>
+                            <div className='d-flex align-items-center justify-content-end gap-3'>
+                                <div className='pe-3'>
+                                    <span className='text-white fs-5'>
+                                    <FontAwesomeIcon icon={faBell}/>
+                                    </span>
+                                </div>
+                                <div>
+                                    <p className='m-0 text-white fw-bold lh-1'>Juan Dela Cruz</p>
+                                    <p className='m-0 text-right fw-light text-white'><small>Account Setting</small></p>
+                                </div>
+                                <div>
+                                    <span className='text-white fs-1'>
+                                    <FontAwesomeIcon icon={faUserCircle}/>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </header>
       </>
     );

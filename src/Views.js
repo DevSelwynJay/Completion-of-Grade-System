@@ -1,7 +1,9 @@
 import {  Route, Routes } from 'react-router-dom';
 import Registration from './pages/Registration';
 import Login from './pages/Login';
-import Dashboard from './pages/Dashboard';
+import DashboardAdmin from './pages/DashboardAdmin';
+import DashboardFaculty from './pages/DashboardFaculty';
+import DashboardStudent from './pages/DashboardStudent';
 
 function Views() {
   return (
@@ -9,7 +11,9 @@ function Views() {
           <Route path="/" element={<Login/>}/>
           <Route path="/registration" element={<Registration/>}/>
           <Route path="/login" element={<Login/>}/>
-          <Route path="/dashboard" element={<Dashboard/>}/>
+          <Route path="/dashboard-admin" element={<DashboardAdmin/>}/>
+          <Route path="/dashboard-faculty" element={<DashboardFaculty/>}/>
+          <Route path="/dashboard-student" element={<DashboardStudent/>}/>
       </Routes>
   );
 }
