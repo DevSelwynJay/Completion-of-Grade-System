@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Header from '../components/Header';
 
-function DashboardStudent(){
+function FacultyDashboard(){
    
     return(
       <>
@@ -62,24 +62,39 @@ function DashboardStudent(){
               </div>
             </div>
             <div className='row'>
-              <div className='col-sm-8'>
+              <div className='col-sm-12'>
                   <table class="table table-striped">
                     <thead>
                         <tr>
-                          <th scope="col">Subject</th>
-                          <th scope="col">Faculty Name</th>
+                          <th scope="col" className='id'>ID</th>
+                          <th scope="col">Student Name</th>
+                          <th scope="col">Date Submitted</th>
                           <th scope="col">Status</th>
+                          <th scope="col">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                          <td>Math</td>
+                          <td>1</td>
                           <td>Selwyn Jay Faustino</td>
-                          <td>Processing</td>
+                          <td>07/27/2000</td>
+                          <td>Processed</td>
+                          <td>
+                              <div className='row'>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>Approve</button>
+                                </div>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-primary'>Reject</button>
+                                </div>
+                              </div>
+                          </td>
                         </tr>
                     </tbody>
                   </table>
-                  <div className='row align-items-center mb-3'>
+              </div>
+            </div>
+            <div className='row align-items-center mb-3'>
               <div className='col-sm-6'>
                   <p className='text-black m-0'>Page 1 fo 6</p>
               </div>
@@ -106,37 +121,6 @@ function DashboardStudent(){
                   </nav>
               </div>
             </div>
-              </div>
-              <div className='col-sm-4'>
-                <div className='shadow py-4 px-3 mb-5 bg-white rounded'>
-                    <form>
-                        <h5 className='text-uppercase fw-bold mb-3'>Request New Completion Form</h5>
-                        <div className='row'>
-                            <div className='col-sm-12 mb-3'>
-                                <input type="email" className="form-control " placeholder="Email"/>
-                            </div>
-                            <div className='col-sm-12 mb-3'>
-                                <input type="email" className="form-control " placeholder="Email"/>
-                            </div>
-                            <div className='col-sm-12 mb-3'>
-                                <input type="email" className="form-control " placeholder="Email"/>
-                            </div>
-                            <div className='col-sm-12 mb-3'>
-                                <input type="email" className="form-control " placeholder="Email"/>
-                            </div>
-                            <div className='col-sm-12 mb-3'>
-                                <input type="email" className="form-control " placeholder="Email"/>
-                            </div>
-                        </div>
-                        <div className='row'>
-                            <div className='col-sm-12 d-flex justify-content-end'>
-                               <button className='btn btn-primary'>Submit</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-              </div>
-            </div>
         </div>
       </div>
 
@@ -144,4 +128,4 @@ function DashboardStudent(){
     );
 }
 
-export default DashboardStudent;
+export default FacultyDashboard;

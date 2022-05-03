@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Header from '../components/Header';
 
-function DashboardAdmin(){
+function AdminDashboard(){
    
     return(
       <>
@@ -102,7 +102,7 @@ function DashboardAdmin(){
                   <nav>
                     <ul class="pagination m-0">
                         <li className="page-item">
-                          <a className="page-link" href="#" aria-label="Previous">
+                          <a className="page-link" aria-label="Previous">
                           <span aria-hidden="true">&laquo;</span>
                           </a>
                         </li>
@@ -113,7 +113,7 @@ function DashboardAdmin(){
                         <li className="page-item"><a class="page-link" href="#">5</a></li>
                         <li className="page-item"><a class="page-link" href="#">6</a></li>
                         <li className="page-item">
-                          <a className="page-link" href="#" aria-label="Next">
+                          <a className="page-link" aria-label="Next">
                           <span aria-hidden="true">&raquo;</span>
                           </a>
                         </li>
@@ -128,4 +128,4 @@ function DashboardAdmin(){
     );
 }
 
-export default DashboardAdmin;
+export default AdminDashboard;
