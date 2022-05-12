@@ -1,8 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Header from '../components/Header';
+import ModalApprove from "../components/ModalApprove";
+import ModalReject from "../components/ModalReject";
+import React, { useState } from "react";
 
 function FacultyDashboard(){
+
+  const [modalOpenApprove, setModalOpenApprove] = useState(false);
+  const [modalOpenReject, setModalOpenReject] = useState(false);
    
     return(
       <>
@@ -82,10 +88,17 @@ function FacultyDashboard(){
                           <td>
                               <div className='row'>
                                 <div className='col-sm-6'>
-                                    <button className='btn btn-primary'>Approve</button>
+                                    <button className='btn btn-primary openModalBtn' 
+                                    onClick={() => {
+                                      setModalOpenApprove(true);
+                                    }}>Approve
+                                    </button>
                                 </div>
                                 <div className='col-sm-6'>
-                                    <button className='btn btn-primary'>Reject</button>
+                                    <button className='btn btn-primary'
+                                    onClick={() => {
+                                      setModalOpenReject(true);
+                                    }}>Reject</button>
                                 </div>
                               </div>
                           </td>
@@ -123,6 +136,9 @@ function FacultyDashboard(){
             </div>
         </div>
       </div>
+
+      {modalOpenApprove && <ModalApprove setOpenModalApprove={setModalOpenApprove} />}
+      {modalOpenReject && <ModalReject setOpenModalReject={setModalOpenReject} />}
 
       </>
     );

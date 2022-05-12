@@ -41,3 +41,13 @@ $font-family-base: 'Open Sans', sans-serif;
   }
 }
 
+.modal{
+  display: block;
+  background-color: rgba(0, 0, 0, 0.671);
+
+  .close-btn{
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+}
